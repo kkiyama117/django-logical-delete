@@ -7,8 +7,11 @@ Detailed documentation is in the "docs" directory.
 
 Quick start
 -----------
+1. install this package
 
-1. Add "logical_delete" to your INSTALLED_APPS setting like this::
+     pipenv install 'git+https://github.com/kkiyama117/django-logical-delete@v1.0.2#egg=logical_delete'
+
+2. Add "logical_delete" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
