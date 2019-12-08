@@ -7,7 +7,7 @@ from django.conf import settings
 from django.test.utils import get_runner
 
 
-class PytestTestRunner(object):
+class PytestTestRunner:
     """Runs pytest to discover and run tests.
 
     https://pytest-django.readthedocs.io/en/latest/faq.html
@@ -46,7 +46,7 @@ class PytestTestRunner(object):
 see https://docs.djangoproject.com/ja/3.0/topics/testing/advanced/
 """
 if __name__ == "__main__":
-    os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.settings'
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'test_project.settings'
     django.setup()
     TestRunner = get_runner(settings)
     test_runner = TestRunner()
