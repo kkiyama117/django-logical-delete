@@ -18,5 +18,9 @@ Quick start
         'logical_delete',
     ]
 
+Test
+----
+    pipenv run test
+
 
 

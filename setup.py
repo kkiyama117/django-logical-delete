@@ -42,7 +42,8 @@ setup(
     # setup_requires=[],
     tests_require=[
         'pipenv',
-        'pytest'
+        'pytest',
+        'pytest-django'
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
