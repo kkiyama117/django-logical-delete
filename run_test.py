@@ -8,7 +8,7 @@ from django.test.utils import get_runner
 
 
 class PytestTestRunner:
-    """Runs pytest to discover and run tests.
+    """Runs pytest to discover and run test_app.
 
     https://pytest-django.readthedocs.io/en/latest/faq.html
     """
@@ -43,7 +43,7 @@ class PytestTestRunner:
 
 """test runner without using pytest
 
-deprecated unless you like this way
+deprecated unless you like this way.
 see https://docs.djangoproject.com/ja/3.0/topics/testing/advanced/
 """
 if __name__ == "__main__":
@@ -51,5 +51,5 @@ if __name__ == "__main__":
     django.setup()
     TestRunner = get_runner(settings)
     test_runner = TestRunner()
-    failures = test_runner.run_tests(["tests"])
+    failures = test_runner.run_tests(["test_app"])
     sys.exit(bool(failures))

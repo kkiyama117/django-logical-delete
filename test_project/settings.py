@@ -46,7 +46,7 @@ DATABASES = {
 }
 
 INSTALLED_APPS = [
-    'tests',
+    'test_app',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -68,7 +68,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'tests/templates')
+            os.path.join(BASE_DIR, 'test_app/templates')
         ],
         'OPTIONS': {
             'debug': True,
@@ -89,7 +89,7 @@ STATIC_URL = '/static/'
 # Setting for pytest-django
 # https://pytest-django.readthedocs.io/en/latest/faq.html
 TEST_RUNNER = 'run_test.PytestTestRunner'
-DJANGO_SETTINGS_MODULE = 'tests.settings'
+DJANGO_SETTINGS_MODULE = 'test_app.settings'
 
 DOMAIN = 'http://localhost'
 ROOT_URLCONF = 'test_project.urls'

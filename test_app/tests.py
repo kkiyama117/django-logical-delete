@@ -2,8 +2,8 @@ import pytest
 from django.core.exceptions import ValidationError
 from django.test import TestCase
 
-# Create your tests here.
-from tests.models import Goods
+# Create your test_app here.
+from test_app.models import Goods
 
 
 @pytest.mark.django_db
