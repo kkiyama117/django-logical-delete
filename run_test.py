@@ -41,8 +41,9 @@ class PytestTestRunner:
         return pytest.main(argv)
 
 
-"""test runner
+"""test runner without using pytest
 
+deprecated unless you like this way
 see https://docs.djangoproject.com/ja/3.0/topics/testing/advanced/
 """
 if __name__ == "__main__":

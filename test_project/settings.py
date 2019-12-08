@@ -15,8 +15,6 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ROOT_URLCONF = 'test_project.urls'
-
 WSGI_APPLICATION = 'test_project.wsgi.application'
 
 BASE_DIR = os.path.dirname(__file__)
@@ -94,6 +92,6 @@ TEST_RUNNER = 'run_test.PytestTestRunner'
 DJANGO_SETTINGS_MODULE = 'tests.settings'
 
 DOMAIN = 'http://localhost'
-ROOT_URLCONF = 'tests.urls'
+ROOT_URLCONF = 'test_project.urls'
 SECRET_KEY = "dummy"
 
