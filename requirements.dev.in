@@ -1,0 +1,9 @@
+autopep8
+django-debug-toolbar
+django-webtest
+django>=3.0.4
+flake8
+pytest-cov
+pytest-django
+pytest
+tox
