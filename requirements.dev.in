@@ -3,6 +3,7 @@ django-debug-toolbar
 django-webtest
 django>=3.0.4
 flake8
+twine
 pytest-cov
 pytest-django
 pytest
