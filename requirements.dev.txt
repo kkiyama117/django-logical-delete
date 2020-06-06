@@ -18,7 +18,7 @@ cryptography==2.8         # via secretstorage
 distlib==0.3.0            # via virtualenv
 django-debug-toolbar==2.2  # via -r requirements.dev.in
 django-webtest==1.9.7     # via -r requirements.dev.in
-django==3.0.4             # via -r requirements.dev.in, django-debug-toolbar
+django==3.0.7             # via -r requirements.dev.in, django-debug-toolbar
 docutils==0.16            # via readme-renderer
 entrypoints==0.3          # via flake8
 filelock==3.0.12          # via tox, virtualenv
